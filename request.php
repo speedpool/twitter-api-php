@@ -10,7 +10,7 @@ $config = require_once 'config/local.php';
 /* Create a TwitterOauth object with consumer/user tokens. */
 $connection = new TwitterOAuth(
     $config['consumer_key'], $config['consumer_secret'],
-    $config['oauth_token'], $config['oauth_secret']
+    $config['oauth_token'], $config['oauth_token_secret']
 );
 
 $twitter = new Twitter($connection);
